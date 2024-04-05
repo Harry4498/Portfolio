@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-color {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-600 inline-block;
+}
+
+body {
+  background-color: black;
+}
+
+.bg-primary-color {
+  @apply bg-gradient-to-r from-orange-400 to-pink-600 inline-block;
+}
+.image-shake:hover {
+  animation: horizontal-shaking 0.5s ease-in-out;
+}
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  75% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
